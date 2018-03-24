@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="avatar" src="/img/guren.jpg"></image>
+  <text class="motto">Hello，顾人</text>
+  <view class="journey-container" catchtap="onTapJump">
+    <text class="journey">开起小程序之旅</text>
+  </view>
+</view>

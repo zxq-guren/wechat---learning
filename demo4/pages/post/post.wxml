@@ -1,0 +1,21 @@
+<!-- 引用模板 -->
+<import src="post-item/post-item-tpl.wxml" />
+<view>  
+<!-- 轮播组件 -->
+	
+  <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true"><!-- vertical="true" 设置纵向轮播-->
+  	<swiper-item>
+  		<image src="/img/post-1@text.jpg" />
+  	</swiper-item>
+  	<swiper-item>
+  		<image src="/img/post-2@text.jpg" />
+  	</swiper-item>
+  	<swiper-item>
+  		<image src="/img/post-3@text.jpg" />
+  	</swiper-item>
+  </swiper>
+<!-- 文章列表 -->
+  <block wx:for="{{postList}}" wx:for-index="idx" wx:for-item="item">
+      <template is="postItemTpl" data="{{...item}}" />
+  </block>
+</view>
