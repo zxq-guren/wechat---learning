@@ -1,0 +1,10 @@
+{
+  "pages": [
+  	"pages/post/post",
+    "pages/index/index"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#b3d4db"
+  }
+}
